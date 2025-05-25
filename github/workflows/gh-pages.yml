@@ -2,15 +2,16 @@ name: GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]  # 触发分支
+    branches: [ "master" ]  
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+  
       - uses: actions/checkout@v4
         with:
-          submodules: true  # 如果使用主题，需要启用 submodules
+          submodules: true 
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -24,4 +25,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  # Hugo 默认输出目录
+          publish_dir: ./public  
