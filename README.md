@@ -1,4 +1,4 @@
-# hugoBasicExample
+# github.io
 
 This repository is intentionally empty.
 
