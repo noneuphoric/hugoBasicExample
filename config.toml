@@ -1,0 +1,8 @@
+baseURL = "https://noneuphoric.github.io/"
+languageCode = "zh-cn"
+title = "我的博客"
+theme = "hugo-book"
+
+[params]
+  BookToC = true
+  BookSearch = true
